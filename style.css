@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "mevera";
+    src: url(./fonts/MevaraTrial-Regular.otf);
+}
+@font-face {
+    font-family: "yesno";
+    src: url(./fonts/YesYesNo.ttf);
+}
+@font-face {
+    font-family: "mollani";
+    src: url(./fonts/Mollani-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mevera";
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+
+#mobile-icons{
+    width: 100%;
+    display: none;
+}
+
+#page1{
+    height: 100vh; 
+    width: 100%;
+    /* background-color: #ffffff; */
+    position: relative; 
+
+}
+
+#pg1-bg{
+    height: 99.9vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#pg1-bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#nav{
+    padding: 1vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black; 
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.menu-icon{
+    display: none;
+}
+
+#nav h5{
+    font-family: "yesno";
+        letter-spacing: 1px;
+        font-size: 0.8vw;
+}
+
+.nav-start{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-start h5{
+    font-size: 0.8vw;
+}
+
+.nav-bottom{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.9%;
+}
+
+.nav-bottom h3{
+    font-family: "mevera";
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.nav-end{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-end i{
+    font-size: 0.9vw;
+}
+
+#denim-jacket{
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 11%;
+    transform: translatex(-50%);
+}
+
+#denim-jacket img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#denim-jacket h3{
+    font-size: 8vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: -9vw;
+    position: relative;
+    z-index: -10;
+    font-family: "mollani";
+}
+
+#denim-jacket h2{
+    margin-top: -1vw;
+    text-align: center;
+    font-size: 0.9vw;
+}
+#denim-jacket h1{
+    font-size: 8vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -6vw;
+    position: relative;
+    z-index: -10;
+}
+
+#page1-products{
+    position: relative;
+    width: 100%;
+    top: 22%;
+    gap: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pg1-product1{
+    height: 40vh;
+    width: 15vw;
+    position: relative;
+}
+
+.pg1-product1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pg1-product1 h5{
+    text-align: center;
+    font-size: 0.6vw;
+    margin-top: -4vw;
+}
+
+.pg1-product2{
+    height: 35vh;
+    width: 15vw;
+}
+
+.pg1-product2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pg1-product2 h5{
+    text-align: center;
+    font-size: 0.6vw;
+    margin-top: -1.5vw;
+}
+
+#page-1-bottom{
+    background-color: #3F658A;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 2vw;
+}
+.bottom-text h2{
+    color: #ffffff;
+    font-size: 0.8vw;
+    /* font-weight: 200; */
+    font-family: "yesno";
+}
+
+
+/* #page2{
+    background-color: peachpuff;
+    width: 100%;
+    height: 100vh;
+} */
+
+
+
+@media only screen and (max-width: 480px) {
+
+    #page1{
+    height: 100vh; 
+    width: 100%;
+    /* background-color: #ffffff; */
+    position: relative; 
+
+}
+
+    #mobile-icons{
+    width: 100%;
+    display: block;
+    position: fixed;
+    padding: 2vw;
+    /* position: absolute; */
+    z-index: 999;
+    bottom: 0;
+}
+    .bottom-menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw 5vw;
+        border: 0.5px solid rgba(0, 0, 0, 0.342);
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .bottom-menu{
+        font-size: 4vw;
+    }
+
+
+    #nav{
+    padding: 3vw 3vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116); 
+    }
+
+    #nav h5{
+        font-size: 2vw;
+    }
+
+    .nav-start{
+    display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-top: 1%;
+    }
+    .menu-icon i{
+        font-size: 7vw;
+    }
+    
+
+    .nav-bottom{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.2%;
+    }
+
+    .nav-bottom h3{
+    font-family: "mevera";
+    font-size: 5vw;
+    }
+
+    .nav-end{
+    display: flex;
+    gap: 10px;
+    margin-top: 1.6%;
+    }
+
+    .nav-end h5{
+        display: none;
+    }
+
+    .nav-end i{
+    font-size: 5vw;
+    }
+
+
+  #page1-products{
+    display: none;
+}
+
+
+    #denim-jacket{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translatex(-50%);
+    }
+
+    #denim-jacket img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+
+}
+    #denim-jacket h3{
+    font-size: 15vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: -40vw;
+    position: relative;
+    z-index: -10;
+    font-family: "mollani";
+}
+
+    #denim-jacket h2{
+    margin-top: -5vw;
+    text-align: center;
+    font-size: 2vw;
+}
+    #denim-jacket h1{
+    font-size: 15vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -37vw;
+    position: relative;
+    z-index: -10;
+}
+
+#page-1-bottom{
+    background-color: #3F658A;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw 3vw;
+}
+.bottom-text h2{
+    color: #ffffff;
+    font-size: 2vw;
+    /* font-weight: 200; */
+    font-family: "yesno";
+}
+
+
+}

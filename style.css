@@ -18,6 +18,15 @@
     font-family: "l-sans";
     src: url(./fonts/LiberationSans-Regular.ttf);
 }
+@font-face {
+    font-family: "coolvetica";
+    src: url(./fonts/Coolvetica\ Rg.otf);
+}
+@font-face {
+    font-family: "fig";
+    src: url(./fonts/Figurlce.otf);
+}
+
 
 *{
     margin: 0;
@@ -73,9 +82,10 @@ html, body{
 }
 
 #nav h5{
-    font-family: "yesno";
+    font-family: "coolvetica";
         letter-spacing: 1px;
         font-size: 0.8vw;
+        font-weight: 100;
 }
 
 .nav-start{
@@ -105,6 +115,7 @@ html, body{
     font-weight: 100;
     /* text-transform: uppercase; */
     font-size: 1.5vw;
+    font-weight: 600;
 }
 
 .nav-end{
@@ -351,7 +362,7 @@ html, body{
     width: 100%; 
     padding: 3vw;
     margin-top: 2vw;
-    gap: 1vw;
+    gap: 0.5vw;
     justify-content: center;
     align-items: center;
 
@@ -359,8 +370,10 @@ html, body{
 
 .product-display{
     width: 60%;
-    background-color: #3F658A;
+    /* background-color: #3F658A; */
     height: 60vh;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 #productImage{
     width: 100%;
@@ -368,11 +381,18 @@ html, body{
     object-fit: cover;
     display: block;
 }
-.product-display img{
+
+.display-container{
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    margin-top: 0.2vw;
+}
+.display-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-scroller{
@@ -404,6 +424,126 @@ html, body{
     font-size: 0.5vw;
 }
 
+#page4{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #eeeeee; */
+    padding: 4vw 3vw;
+}
+
+#page4-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#page4-title h1{
+    font-size: 5vw;
+    font-family: "coolvetica";
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#page4-title h3{
+    font-size: 1vw;
+    font-family: "l-sans";
+}
+
+#page4-products{
+    margin-top: 5vw;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.page4-container{
+    height: 100%;
+    width: 20vw;
+    /* background-color: #3F658A; */
+}
+.page4-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.p4-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0.5vw;
+    /* background-color: #f3f3f3; */
+}
+.p4-details h3{
+    font-size: 0.8vw;
+    font-family: "l-sans";
+}
+
+#footer{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#footer h1{
+    color: #ffffff;
+    font-size: 23vw;
+    font-family: "coolvetica";
+    text-align: center;
+    font-weight: 100;
+    margin-top: -10%;
+    /* background-color: #3F658A; */
+    
+}
+
+.footer-details{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.footer-services{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1vw;
+
+}
+
+.footer-services h5{
+    color: #bebebe;
+    font-family: "l-sans";
+    text-transform: capitalize;
+    font-size: 0.9vw;
+    padding-bottom: 1vw;
+}
+.footer-services a{
+    color: #ffffff;
+    font-family: "l-sans";
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer-services i{
+    font-size: 0.9vw;
+}
+
+.footer-btm{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+.footer-btm h3{
+    color: #ffffff;
+    font-family: "l-sans";
+    font-size: 1vw;
+    font-weight: 100;
+}
+.social-media a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 0.5vw;
+}
 
 
 
@@ -588,6 +728,79 @@ html, body{
     font-family: "griff";
     font-weight: 600;
 }
+
+
+#page3-product{
+    display: flex;
+    width: 100%; 
+    padding: 3vw;
+    margin-top: 30vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.product-display{
+    width: 100%;
+    /* background-color: #3F658A; */
+    height: 30vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+#productImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.display-container{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 0.1vw;
+}
+
+
+.product-scroller{
+    width: 50%;
+    height: 45vh;
+    background-color: #ffffff;
+    overflow: auto;
+    scrollbar-width: none;
+    position: absolute;
+    right: 2.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* x-offset, y-offset, blur, color */
+    
+}
+
+.pro-container1{
+    margin-top: 0.2vw;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.pro-container1 img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.pro-product-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5vw;
+}
+.pro-container1 h2{
+    font-family: l-sans;
+    font-size: 1.7vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    line-height: 2vw;
+}
+
 
 
 
